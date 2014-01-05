@@ -11,7 +11,7 @@ class App < Sinatra::Base
   set :tests         , File.dirname(__FILE__) + '/tests'
 
   configure do
-    Mongoid.load!(File.dirname(__FILE__)+ '/config/database.yml')
+    #Mongoid.load!(File.dirname(__FILE__)+ '/config/database.yml')
   end
 end
 

@@ -1,0 +1,94 @@
+/****************************************************************************
+ * HEADER
+ ***************************************************************************/
+body {
+    background-color: #00d9a3;
+}
+video#bgvid {
+    width:500px;
+    height:500px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-250px 0 0 -250px;
+}
+
+.navbar-default {
+}
+
+p {
+    color: #fff;
+}
+
+#header {
+    margin-bottom: 0;
+}
+
+    .navbar-inner {
+        border: 0;
+        background: #333;
+        box-shadow: none;
+        border-radius: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #search input {
+        border-color: #444;
+        font-family: 'Droid Sans';
+        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8e5e5), color-stop(100%, #ffffff));
+        background: -webkit-linear-gradient(top, #e8e5e5, #ffffff);
+        background: -moz-linear-gradient(top, #e8e5e5, #ffffff);
+        background: -o-linear-gradient(top, #e8e5e5, #ffffff);
+        background: linear-gradient(top, #e8e5e5, #ffffff);
+        -webkit-box-shadow: inset rgba(0, 0, 0, 0.65) 0 1px 5px, rgba(255, 255, 255, 0.2) 0 1px 1px;
+        -moz-box-shadow: inset rgba(0, 0, 0, 0.65) 0 1px 5px, rgba(255, 255, 255, 0.2) 0 1px 1px;
+        box-shadow: inset rgba(0, 0, 0, 0.65) 0 1px 5px, rgba(255, 255, 255, 0.2) 0 1px 1px;
+        border: 1px solid #000;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        outline: none;
+        font-size: 14px;
+        line-height: normal;
+        color: #000;
+        -webkit-appearance: none;
+    }
+
+/****************************************************************************
+ * VIDEOS
+ ***************************************************************************/
+
+#videos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    #videos li {
+        float: left;
+        margin-bottom: -5px;
+        background-image: url(../img/loading.jpg);
+        background-position: center center;
+    }
+
+    #videos li.selected .overlay {
+        display: inline;
+    }
+
+    #videos .overlay {
+        position: absolute;
+        display: none;
+        color: #fff;
+        background-color: #444;
+        font-size: 12px;
+        opacity: 0.9;
+    }
+
+    #videos .overlay .username,
+    #videos .overlay .likes,
+    {
+        font-size: 9px;
+    }

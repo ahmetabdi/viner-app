@@ -1,4 +1,3 @@
-viner-app
-=========
+#Vine App Using Sinatra
 
-Viner Sinatra App
+

@@ -1,0 +1,4 @@
+<% random = $client.tag('scary').data.records.sample %>
+
+<p><%= random.description %></p>
+<video autoplay id="bgvid"><source src="<%= random.videoUrl %>"></video><br />

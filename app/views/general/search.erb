@@ -1,0 +1,8 @@
+<% random = $client.tag(params[:id]).data.records.sample %>
+
+<% if random %>
+  <p><%= random.description %></p>
+  <video autoplay id="bgvid"><source src="<%= random.videoUrl %>"></video><br />
+<% else %>
+  <p>Got nothing for you sorry.</p>
+<% end %>
